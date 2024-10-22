@@ -1,5 +1,3 @@
-package bootcamp;
-
 import javafx.application.Application;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -27,13 +25,8 @@ public class Fan extends Application {
 		FanPane fan = new FanPane();
 	    
 	    HBox hBox = new HBox(5);
-//	    Button btRun = new Button("Start");
-//	    Button btPause = new Button("Pause");
-//	    Button btResume = new Button("Resume");
-//	    Button btReverse = new Button("Reverse");
 	    hBox.setAlignment(Pos.CENTER);
-//	    hBox.getChildren().addAll(btRun, btPause, btResume, btReverse);
-	    
+    
 	    BorderPane pane = new BorderPane();
 	    pane.setCenter(fan);
 	    pane.setBottom(hBox);
@@ -52,11 +45,6 @@ public class Fan extends Application {
 	    scene.widthProperty().addListener(e -> fan.setW(fan.getWidth()));
 	    scene.heightProperty().addListener(e -> fan.setH(fan.getHeight()));
 	    
-//	    btRun.setOnAction(e -> animation.play());
-//	    btPause.setOnAction(e -> animation.pause());
-//	    btResume.setOnAction(e -> animation.play());
-//	    btReverse.setOnAction(e -> fan.reverse());
-
 	}
 
 	public static void main(String[] args) {
